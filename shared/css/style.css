@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: "Roboto", Arial, sans-serif;
+
+    --md-sys-color-primary: #315da8;
+    --md-sys-color-on-primary: #ffffff;
+    --md-sys-color-primary-container: #d9e2ff;
+    --md-sys-color-on-primary-container: #001a42;
+
+    --md-sys-color-surface: #f9f9ff;
+    --md-sys-color-on-surface: #1a1b20;
+    --md-sys-color-outline: #74777f;
+}

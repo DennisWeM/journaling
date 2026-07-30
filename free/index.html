@@ -22,26 +22,34 @@
 
 <body>
     
-<main>
+<main class="page-container">
 
-    <header>
-
+    <header class="page-header">
+        <span class="material-symbols-outlined page-logo">
+            edit note
+        </span>
         <h1>Freies Journaling</h1>
 
     </header>
 
-<section>
-        <h2>Herzlich Willkommen</h2>
+<section class="intro-section">
+        <h2 class="welcome-heading">Herzlich Willkommen</h2>
         <p>Halten Sie Gedanken, Gefühle und Erlebnisse in Ihrem persönlichen Journal fest.</p>
 </section>
 
-<section>
+<section class="action-section">
 
         <md-filled-button id="newEntryButton">
+            <span slot="icon" class="material-symbols-outlined">
+                add
+            </span>
             Neuer Eintrag
         </md-filled-button>
 
         <md-outlined-button id="MyEntriesButton">
+            <span slot="icon" class="material-symbols-outlined">
+                history
+            </span>
             Meine Einträge
         </md-outlined-button>
 
