@@ -349,6 +349,46 @@ color: var(--md-sys-color-on-surface);
     color: var(--md-text-secondary);
 }
 
+/* Geführte Einträge */
+
+.guided-entry-content {
+    margin-top: 8px;
+}
+
+.guided-answer-block {
+    padding: 18px 0;
+
+    border-bottom: 1px solid var(--md-sys-color-outline);
+}
+
+.guided-answer-block:first-child {
+    padding-top: 0;
+}
+
+.guided-answer-block:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.guided-answer-question {
+    margin: 0 0 8px;
+
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+
+    color: var(--md-sys-color-on-surface);
+}
+
+.guided-answer-text {
+    margin: 0;
+
+    line-height: 1.7;
+    white-space: pre-wrap;
+
+    color: var(--md-text-secondary);
+}
+
 /* Responsives Design */
 
 @media (max-width: 600px) {
