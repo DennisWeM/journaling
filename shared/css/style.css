@@ -135,6 +135,7 @@ color: var(--md-sys-color-on-surface);
 
 .journal-label {
     display: block;
+    text-align: center;
 
     margin-bottom: 10px;
 
@@ -166,6 +167,22 @@ color: var(--md-sys-color-on-surface);
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+#journalText:focus {
+    outline: none;
+
+    border-color: var(--md-sys-color-primary);
+
+    box-shadow: 0 0 0 3px rgba(63, 95, 169, 0.15);
+}
+
+#journalText::placeholder {
+    color: var(--md-text-secondary);
+}
+
+.action-section a {
+    text-decoration: none;
+    display: block;
+}
 
 /* Responsives Design */
 
