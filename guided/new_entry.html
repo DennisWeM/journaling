@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neuer Eintrag</title>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+
+    <!-- Material Symbols -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+
+    <!-- Material Web -->
+    <script type="module" src="https://esm.run/@material/web/all.js"></script>
+
+    <!-- Gemeinsames CSS -->
+    <link rel="stylesheet" href="../shared/css/style.css">
+</head>
+
+<body>
+
+    <main class="page-container">
+
+        <header class="page-header">
+
+            <span class="material-symbols-outlined page-logo" aria-hidden="true">
+                psychology
+            </span>
+
+            <h1>Geführtes Journaling</h1>
+
+        </header>
+
+        <section class="guided-progress-section">
+
+            <p id="questionProgress" class="question-progress">
+                Frage 1 von 7
+            </p>
+
+        </section>
+
+        <section
+            class="guided-question-section"
+            aria-labelledby="questionText">
+
+            <h2 id="questionText" class="question-heading">
+                Was ist heute passiert, das dir besonders in Erinnerung geblieben ist?
+            </h2>
+
+            <label for="answerText" class="journal-label">
+                Deine Antwort
+            </label>
+
+            <textarea
+                id="answerText"
+                name="answerText"
+                placeholder="Schreibe hier deine Gedanken auf..."
+            ></textarea>
+
+        </section>
+
+        <section class="action-section">
+
+            <md-filled-button id="nextButton">
+
+                <span slot="icon" class="material-symbols-outlined">
+                    arrow_forward
+                </span>
+
+                <span id="nextButtonText">Weiter</span>
+
+            </md-filled-button>
+
+            <a href="index.html">
+                <md-outlined-button id="cancelButton">
+
+                    <span slot="icon" class="material-symbols-outlined">
+                        close
+                    </span>
+
+                    Abbrechen
+
+                </md-outlined-button>
+            </a>
+
+        </section>
+
+    </main>
+
+    <script src="../shared/js/storage.js"></script>
+    <script src="js/journal.js"></script>
+
+</body>
+
+</html>
