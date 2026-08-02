@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meine Einträge</title>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+
+    <!-- Material Symbols -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+
+    <!-- Material Web -->
+    <script type="module" src="https://esm.run/@material/web/all.js"></script>
+
+    <!-- Gemeinsames CSS -->
+    <link rel="stylesheet" href="../shared/css/style.css">
+</head>
+
+<body>
+
+    <main class="page-container entries-page">
+
+        <header class="page-header">
+
+            <span class="material-symbols-outlined page-logo" aria-hidden="true">
+                history
+            </span>
+
+            <h1>Meine Einträge</h1>
+
+        </header>
+
+        <section class="intro-section">
+
+            <p>
+                Hier findest du deine lokal gespeicherten Journaling-Einträge.
+            </p>
+
+        </section>
+
+        <section
+            id="entriesContainer"
+            class="entries-container"
+            aria-live="polite">
+        </section>
+
+        <section class="action-section">
+
+            <a href="index.html">
+                <md-outlined-button>
+
+                    <span slot="icon" class="material-symbols-outlined">
+                        arrow_back
+                    </span>
+
+                    Zurück zur Startseite
+
+                </md-outlined-button>
+            </a>
+
+        </section>
+
+    </main>
+
+    <script src="../shared/js/storage.js"></script>
+    <script src="js/entries.js"></script>
+
+</body>
+
+</html>
