@@ -184,6 +184,11 @@ color: var(--md-sys-color-on-surface);
     display: block;
 }
 
+.action-section a md-filled-button,
+.action-section a md-outlined-button {
+    width: 100%;
+}
+
 /* Responsives Design */
 
 @media (max-width: 600px) {
