@@ -31,3 +31,20 @@ function saveJournalEntry(text, type = "free") {
 
     return newEntry;
 }
+
+function saveGuidedJournalEntry(answers) {
+    const entries = getJournalEntries();
+
+    const newEntry = {
+        id: Date.now(),
+        createdAt: new Date().toISOString(),
+        type: "guided",
+        answers: answers
+    };
+
+    entries.unshift(newEntry);
+
+   localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
+
+    return newEntry;
+}
