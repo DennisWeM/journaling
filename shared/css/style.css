@@ -73,3 +73,24 @@ color: var(--md-sys-color-on-surface);
     line-height: 1.6;
     color: #45464f;
 }
+
+/* Schaltflächen */
+
+.action-section  {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.action-section md-filled-button,
+.action-section md-outlined-button {
+    width: 100%;
+
+    --md-filled-button-container-height: 48px;
+    --md-outlined-button-container-height: 48px;
+}
+
+.action-section .material-symbols-outlined {
+    position: relative;
+    top: -4px;
+}
