@@ -219,6 +219,10 @@ color: var(--md-sys-color-on-surface);
 }
 
 .entry-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
     padding: 20px;
 
     background-color: #ffffff;
@@ -227,19 +231,30 @@ color: var(--md-sys-color-on-surface);
     border-radius: 16px;
 
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+    overflow: hidden;
 }
 
 .entry-preview {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
     margin: 0;
 
     line-height: 1.6;
     color: var(--md-text-secondary);
 
+    white-space: normal;
     overflow-wrap: anywhere;
     word-break: break-word;
 }
 
 .entry-full-text {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
     margin: 16px 0 0;
 
     line-height: 1.7;
