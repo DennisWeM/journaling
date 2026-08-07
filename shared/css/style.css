@@ -234,6 +234,9 @@ color: var(--md-sys-color-on-surface);
 
     line-height: 1.6;
     color: var(--md-text-secondary);
+
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .entry-full-text {
@@ -243,6 +246,9 @@ color: var(--md-sys-color-on-surface);
     white-space: pre-wrap;
 
     color: var(--md-sys-color-on-surface);
+
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .entry-card-actions {
@@ -387,6 +393,9 @@ color: var(--md-sys-color-on-surface);
     white-space: pre-wrap;
 
     color: var(--md-text-secondary);
+
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 /* Responsives Design */
